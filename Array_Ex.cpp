@@ -17,12 +17,12 @@ int main()
 		cin >> foo[i];	
 		
 	}
-	
+	// Need to create another loop to view array because there is no real value of i outsde of the first loop
 	for (i = 0; i < Number; i++)
 	{
-		if (foo[0] < foo[i])
+		if (foo[0] < foo[i])			//Takes the first value and comppares to the next value
 		{
-			foo[0] = foo[i];
+			foo[0] = foo[i];		//Denotes the first value with teh larger of the two as it goees through each iteration
 		}
 	}
 	cout << "largest Number is  " << foo[0]<<endl;
